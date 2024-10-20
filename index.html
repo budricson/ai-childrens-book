@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Children's Book Platform</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      .user-profile,
+      .popular-books {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      .book-item {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <h1>Children's Book Platform</h1>
+
+      <div class="user-profile">
+        <h2>User Profile</h2>
+        <input v-model="userId" placeholder="Enter User ID" />
+        <button @click="getUserProfile">Get Profile</button>
+        <div v-if="userProfile">
+          <p><strong>User ID:</strong> {{ userProfile.user_id }}</p>
+          <p><strong>Favorite Book:</strong> {{ userProfile.favorite_book }}</p>
+          <p>
+            <strong>Favorite Book Count:</strong> {{
+            userProfile.favorite_book_count }}
+          </p>
+          <p>
+            <strong>Total Spent on Favorite Book:</strong> ${{
+            userProfile.favorite_book_total_spent.toFixed(2) }}
+          </p>
+          <p>
+            <strong>Average Spent on Favorite Book:</strong> ${{
+            userProfile.favorite_book_avg_spent.toFixed(2) }}
+          </p>
+          <p>
+            <strong>Top Recommendation:</strong> {{
+            userProfile.top_recommendation }}
+          </p>
+        </div>
+      </div>
+
+      <div class="popular-books">
+        <h2>Popular Books</h2>
+        <button @click="getPopularBooks">Get Popular Books</button>
+        <div v-if="popularBooks.length">
+          <div
+            v-for="book in popularBooks"
+            :key="book.book_title"
+            class="book-item"
+          >
+            <p><strong>{{ book.book_title }}</strong></p>
+            <p>
+              Orders: {{ book.number_of_orders }} | Revenue: ${{
+              book.total_revenue.toFixed(2) }} | Avg Price: ${{
+              book.average_price.toFixed(2) }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          userId: "",
+          userProfile: null,
+          popularBooks: [],
+        },
+        methods: {
+          getUserProfile() {
+            axios
+              .get(`http://127.0.0.1:5000/user_profile/${this.userId}`)
+              .then((response) => {
+                this.userProfile = response.data;
+              })
+              .catch((error) => {
+                console.error("Error fetching user profile:", error);
+                alert("Error fetching user profile. Please try again.");
+              });
+          },
+          getPopularBooks() {
+            axios
+              .get("http://127.0.0.1:5000/book_popularity")
+              .then((response) => {
+                this.popularBooks = response.data;
+              })
+              .catch((error) => {
+                console.error("Error fetching popular books:", error);
+                alert("Error fetching popular books. Please try again.");
+              });
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+[0m14:59:24.960793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad8a910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adb4bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adb5450>]}
+
+
+============================== 14:59:24.964696 | b54998ea-9ae4-4261-bd84-09ab6cf649f8 ==============================
+[0m14:59:24.964696 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m14:59:24.965174 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/Dominykas/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init ai_childrens_books', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:59:24.975685 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/Dominykas/.dbt')}
+[0m14:59:24.975975 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m14:59:24.977291 [debug] [MainThread]: Starter project path: /Users/Dominykas/ai-childrens-books/venv_311/lib/python3.11/site-packages/dbt/include/starter_project
+[0m14:59:24.982371 [info ] [MainThread]: 
+Your new dbt project "ai_childrens_books" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:59:24.982638 [info ] [MainThread]: Setting up your profile.
+[0m15:00:46.616550 [info ] [MainThread]: Profile ai_childrens_books written to /Users/Dominykas/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:00:47.023887 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 82.13022, "process_user_time": 1.148211, "process_kernel_time": 0.217857, "process_mem_max_rss": "98861056", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:00:47.025402 [debug] [MainThread]: Command `dbt init` succeeded at 15:00:47.025191 after 82.13 seconds
+[0m15:00:47.026083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a45ff90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a99a250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a1fc90>]}
+[0m15:00:47.026753 [debug] [MainThread]: Flushing usage events
+[0m15:00:48.677976 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:08:57.597588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083a61d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085eb790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085fd050>]}
+
+
+============================== 15:08:57.602237 | 1d9b2f3f-0023-46f0-a05e-e1da6128b188 ==============================
+[0m15:08:57.602237 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m15:08:57.602707 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/Dominykas/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m15:08:57.615277 [info ] [MainThread]: dbt version: 1.9.0-b2
+[0m15:08:57.615587 [info ] [MainThread]: python version: 3.11.4
+[0m15:08:57.615836 [info ] [MainThread]: python path: /Users/Dominykas/ai-childrens-books/venv_311/bin/python
+[0m15:08:57.616053 [info ] [MainThread]: os info: macOS-14.6.1-arm64-arm-64bit
+[0m15:08:57.676971 [info ] [MainThread]: Using profiles dir at /Users/Dominykas/.dbt
+[0m15:08:57.677352 [info ] [MainThread]: Using profiles.yml file at /Users/Dominykas/.dbt/profiles.yml
+[0m15:08:57.677578 [info ] [MainThread]: Using dbt_project.yml file at /Users/Dominykas/ai-childrens-books/dbt_project.yml
+[0m15:08:57.678158 [info ] [MainThread]: adapter type: postgres
+[0m15:08:57.678421 [info ] [MainThread]: adapter version: 1.8.2
+[0m15:08:57.678641 [info ] [MainThread]: Configuration:
+[0m15:08:57.678837 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:08:57.679020 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:08:57.679200 [info ] [MainThread]: Required dependencies:
+[0m15:08:57.679419 [debug] [MainThread]: Executing "git --help"
+[0m15:08:57.812070 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:08:57.812808 [debug] [MainThread]: STDERR: "b''"
+[0m15:08:57.813094 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:08:57.813336 [info ] [MainThread]: Connection:
+[0m15:08:57.813630 [info ] [MainThread]:   host: localhost
+[0m15:08:57.813818 [info ] [MainThread]:   port: 5432
+[0m15:08:57.813994 [info ] [MainThread]:   user: dominykas
+[0m15:08:57.814165 [info ] [MainThread]:   database: children_books
+[0m15:08:57.814334 [info ] [MainThread]:   schema: public
+[0m15:08:57.814506 [info ] [MainThread]:   connect_timeout: 10
+[0m15:08:57.814678 [info ] [MainThread]:   role: None
+[0m15:08:57.814871 [info ] [MainThread]:   search_path: None
+[0m15:08:57.815062 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:08:57.815253 [info ] [MainThread]:   sslmode: None
+[0m15:08:57.815440 [info ] [MainThread]:   sslcert: None
+[0m15:08:57.815630 [info ] [MainThread]:   sslkey: None
+[0m15:08:57.815825 [info ] [MainThread]:   sslrootcert: None
+[0m15:08:57.816013 [info ] [MainThread]:   application_name: dbt
+[0m15:08:57.816198 [info ] [MainThread]:   retries: 1
+[0m15:08:57.816710 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m15:08:58.163081 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:08:58.211042 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:08:58.211384 [debug] [MainThread]: On debug: select 1 as id
+[0m15:08:58.211603 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:08:58.349293 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "children_books" does not exist
+
+[0m15:08:58.354501 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m15:08:58.354821 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m15:08:58.355139 [debug] [MainThread]: On debug: No close available on handle
+[0m15:08:58.355497 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:08:58.355912 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:08:58.356172 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/Dominykas/ai-childrens-books/dbt_project.yml> not found
+
+[0m15:08:58.356442 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "children_books" does not exist
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:08:58.358807 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.81573534, "process_user_time": 1.04542, "process_kernel_time": 0.22431, "process_mem_max_rss": "112279552", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:08:58.359390 [debug] [MainThread]: Command `dbt debug` failed at 15:08:58.359293 after 0.82 seconds
+[0m15:08:58.359743 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:08:58.360062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108188850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107965d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047a0a50>]}
+[0m15:08:58.360448 [debug] [MainThread]: Flushing usage events
+[0m15:08:58.897562 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:09:35.556543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10818aad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10818bbd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081ab890>]}
+
+
+============================== 15:09:35.560665 | 41c7a8d1-196d-4d4c-9172-f81e28298911 ==============================
+[0m15:09:35.560665 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m15:09:35.561192 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/Dominykas/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt init ai_childrens_books', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:09:35.571672 [info ] [MainThread]: A project called ai_childrens_books already exists here.
+[0m15:09:35.573329 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.071134046, "process_user_time": 0.985474, "process_kernel_time": 0.140735, "process_mem_max_rss": "98762752", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:09:35.573791 [debug] [MainThread]: Command `dbt init` succeeded at 15:09:35.573700 after 0.07 seconds
+[0m15:09:35.574096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081b4510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e5a250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102b499d0>]}
+[0m15:09:35.574397 [debug] [MainThread]: Flushing usage events
+[0m15:09:36.126238 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:36:53.127502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10823b450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108265210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108265a90>]}
+
+
+============================== 16:36:53.133492 | 77a915b1-c7c5-4c7c-af55-1a5462c30411 ==============================
+[0m16:36:53.133492 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m16:36:53.133984 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/Dominykas/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt compile', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:36:53.134430 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/Dominykas/ai-childrens-books/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:36:53.149442 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_wall_clock_time": 0.09035733, "process_user_time": 0.962787, "process_kernel_time": 0.152784, "process_mem_max_rss": "96108544", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:36:53.149913 [debug] [MainThread]: Command `dbt compile` failed at 16:36:53.149824 after 0.09 seconds
+[0m16:36:53.150233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082659d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104369c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10823a550>]}
+[0m16:36:53.150580 [debug] [MainThread]: Flushing usage events
+[0m16:36:53.831602 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:36:55.051472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068363d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068b5810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068b6090>]}
+
+
+============================== 16:36:55.055102 | 78bc8b13-e297-4851-846a-a8bbb2a53d16 ==============================
+[0m16:36:55.055102 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m16:36:55.055586 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/Dominykas/.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --models user_reading_habits', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:36:55.056061 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/Dominykas/ai-childrens-books/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:36:55.057167 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.060128376, "process_user_time": 0.947501, "process_kernel_time": 0.120286, "process_mem_max_rss": "99090432", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:36:55.057634 [debug] [MainThread]: Command `dbt run` failed at 16:36:55.057548 after 0.06 seconds
+[0m16:36:55.057968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068b5610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068b7d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102570990>]}
+[0m16:36:55.058259 [debug] [MainThread]: Flushing usage events
+[0m16:36:55.580614 [debug] [MainThread]: An error was encountered while trying to flush usage events

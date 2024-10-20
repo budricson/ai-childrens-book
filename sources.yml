@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: raw
+    database: childrens_books
+    schema: public
+    tables:
+      - name: users
+      - name: orders
+        columns:
+          - name: order_id
+            tests:
+              - unique
+              - not_null
+          - name: user_id
+            tests:
+              - not_null
+          - name: book_title
+            tests:
+              - not_null
+          - name: total_amount
+            tests:
+              - not_null
+              - positive_value
+          - name: order_date
+            tests:
+              - not_null
+      - name: book_popularity
+      - name: book_recommendations
+      - name: user_orders
+      - name: user_preferences
+      - name: personalized_recommendations
